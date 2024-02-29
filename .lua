@@ -30,7 +30,7 @@ T1:Toggle("Auto hourly reward",false,function(value)
     end
 end)
 
-T1:Toggle("Auto hourly reward",false,function(value)
+T1:Toggle("Auto claim free chest",false,function(value)
     _G.freechest = value
     while wait() do
       if _G.freechest == false then break end
