@@ -57,19 +57,3 @@ T2:Toggle("Auto Hatch",false,function(value)
       game:GetService("ReplicatedStorage")["Communication"]["Functions"][self.remote.egg]:InvokeServer("Single",_G.egg)
     end
 end)
-
-lib:HookFunction(function(method,vulkan,args)
-    if vulkan == "" and method == "InvokeServer" and args[1] == "Single" then
-            vulkan = "Egg"
-            self.remote.egg = vulkan
-    elseif vulkan == "" and method == "FireServer" and args[1] == "Free Chest" then
-            vulkan = "Chest"
-            self.remote.chest = vulkan
-    elseif vulkan == "" and method == "FireServer" and args[1] == "1" or args[1] == "2" or args[1] == "3" or args[1] == "4" or args[1] == "5" or args[1] == "6" or args[1] == "7" or args[1] == "8" or args[1] == "9" then
-            vulkan = "Hourly"
-            self.remote.hourly = vulkan
-    elseif vulkan == "" and method == "FireServer" and self.remote.click == "" or self.remote.click == nil then
-            vulkan = "Click"
-            self.remote.click = vulkan
-    end
-end)
