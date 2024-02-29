@@ -10,7 +10,7 @@ T1:Toggle("Auto click",false,function(value)
     _G.click = value
     while wait() do
       if _G.click == false then break end
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer()
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer()
     end
 end)
 
@@ -18,15 +18,15 @@ T1:Toggle("Auto hourly reward",false,function(value)
     _G.hrew = value
     while wait() do
       if _G.hrew == false then break end
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("1")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("2")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("3")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("4")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("5")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("6")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("7")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("8")
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("9")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("1")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("2")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("3")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("4")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("5")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("6")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("7")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("8")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("9")
     end
 end)
 
@@ -34,7 +34,7 @@ T1:Toggle("Auto claim free chest",false,function(value)
     _G.freechest = value
     while wait() do
       if _G.freechest == false then break end
-      game:GetService("ReplicatedStorage")["Communication"]["Events"][""]:FireServer("Free Chest")
+      game:GetService("ReplicatedStorage")["Communication"]["Events"]:FindFirstChild(""):FireServer("Free Chest")
     end
 end)
 
@@ -46,6 +46,6 @@ T2:Toggle("Auto Hatch",false,function(value)
     _G.pecah = value
     while wait() do
       if _G.pecah == false then break end
-      game:GetService("ReplicatedStorage")["Communication"]["Functions"][""]:InvokeServer("Single",_G.egg)
+      game:GetService("ReplicatedStorage")["Communication"]["Functions"]:FindFirstChild(""):InvokeServer("Single",_G.egg)
     end
 end)
